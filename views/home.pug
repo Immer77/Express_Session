@@ -1,0 +1,11 @@
+html 
+    head 
+        meta(charset="UTF-8")
+        title my awesome website 
+    body 
+        include includes/menubar
+        p vores sager 
+        if !knownUser
+            include includes/loginForm
+        else 
+            p du er logget ind
